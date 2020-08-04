@@ -1,0 +1,21 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: student
+  datasource:
+    url: jdbc:mysql://localhost:3306/springcloud2?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT
+    username: shuang
+    password: mysql215311?
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:/mapping/*.xml
+  type-aliases-package: com.shuang.entity
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    instance-id: student-8010
+    prefer.ip-address: true

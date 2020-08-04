@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace:该mapper.xml映射文件的唯一标识 -->
+<!-- namespace:该mapper.xml映射文件的唯一标识 -->
+<mapper namespace="com.shuang.repository.StudentRepository">
+    <select id="findAll" resultType="com.shuang.entity.Student">
+        select * from student;
+    </select>
+
+    <select id="findById" parameterType="java.lang.Long"  resultType="com.shuang.entity.Student">
+        select * from student where id=#{id};
+    </select>
+
+    <insert id="save" parameterType="com.shuang.entity.Student">
+        insert into student(name,score,birthday) values(#{name},#{score},#{birthday});
+    </insert>
+
+    <update id="update" parameterType="com.shuang.entity.Student">
+    update student set name=#{name},score=#{score},birthday=#{birthday} where id=#{id};
+    </update>
+
+    <delete id="deleteById" parameterType="java.lang.Long">
+        delete from student where id=#{id};
+    </delete>
+</mapper>

@@ -1,0 +1,6 @@
+# Project exclude paths
+/client/target/
+/configSever/target/
+/eurekaserver/target/
+/student/target/
+/zuul/target/
