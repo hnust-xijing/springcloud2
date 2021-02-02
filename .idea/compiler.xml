@@ -2,15 +2,17 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="student" />
+        <module name="zuul" />
+        <module name="knowlege" />
+        <module name="configSever" />
         <module name="eurekaserver" />
         <module name="client" />
-        <module name="zuul" />
-        <module name="student" />
-        <module name="configSever" />
       </profile>
     </annotationProcessing>
   </component>
@@ -19,6 +21,7 @@
       <module name="client" options="-parameters" />
       <module name="configSever" options="-parameters" />
       <module name="eurekaserver" options="-parameters" />
+      <module name="knowlege" options="-parameters" />
       <module name="springcloud2" options="-parameters" />
       <module name="student" options="-parameters" />
       <module name="zuul" options="-parameters" />

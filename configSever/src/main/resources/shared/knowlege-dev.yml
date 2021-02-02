@@ -1,0 +1,21 @@
+server:
+  port: 8020
+spring:
+  application:
+    name: knowlege
+  datasource:
+    url: jdbc:mysql://rm-f8z1zc6xa764everz5o.mysql.rds.aliyuncs.com:3306/knowlege?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT
+    username: shuang
+    password: Shuang215311
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:/**/*.xml
+  type-aliases-package: com.shuang.entity
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    instance-id: knowlege-8020
+    prefer.ip-address: true

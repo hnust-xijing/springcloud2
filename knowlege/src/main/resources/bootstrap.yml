@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: knowlege
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://localhost:8002
+      fail-fast: true

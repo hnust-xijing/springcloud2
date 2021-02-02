@@ -14,12 +14,13 @@
         <module>student</module>
         <module>client</module>
         <module>zuul</module>
+        <module>knowlege</module>
     </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.7.RELEASE</version>
+        <version>2.4.2</version>
     </parent>
     <dependencies>
         <!--引入springboot-web-->
@@ -41,7 +42,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Finchley.SR2</version>
+                <version>2020.0.0</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

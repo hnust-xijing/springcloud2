@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shuang.dao.AddDao">
+<!--  <resultMap id="BaseResultMap" type="com.system.domain.login.Role">-->
+<!--    <result column="username" jdbcType="VARCHAR" property="username" />-->
+<!--    <result column="role" jdbcType="VARCHAR" property="role" />-->
+<!--  </resultMap>-->
+
+  <insert id="AddModel" parameterType="com.shuang.entity.KnowlegeAddClass"  >
+    insert into knowlege(model_name,model_content,model_url)
+    values (#id={id},#model_name={model_name},#model_content={model_content},#model_url={model_url})
+  </insert>
+
+
+  <insert id="AddList" parameterType="com.shuang.entity.KnowlegeAddClass" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+    insert into main(name,pid,level)
+    values(#name={name},#pid={pid},#level={level})
+  </insert>
+
+
+
+
+</mapper>
